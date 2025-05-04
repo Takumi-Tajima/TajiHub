@@ -494,7 +494,7 @@ DEPENDENCIES
   brakeman
   bullet
   capybara
-  dartsass-rails (~> 0.5.1)
+  dartsass-rails
   debug
   devise
   factory_bot_rails

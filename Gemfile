@@ -4,6 +4,7 @@ gem 'rails'
 
 gem 'bootsnap', require: false
 gem 'bootstrap'
+gem 'dartsass-rails'
 gem 'devise'
 gem 'haml-rails'
 gem 'importmap-rails'
@@ -38,5 +39,3 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
-
-gem 'dartsass-rails', '~> 0.5.1'
