@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 
 gem 'bootsnap', require: false
+gem 'devise'
 gem 'haml-rails'
 gem 'importmap-rails'
 gem 'kamal', require: false
