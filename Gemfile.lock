@@ -405,6 +405,9 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     sexp_processor (4.17.3)
+    simple_form (5.3.1)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     solid_cable (3.0.7)
       actioncable (>= 7.2)
       activejob (>= 7.2)
@@ -506,6 +509,7 @@ DEPENDENCIES
   rspec-rails
   selenium-webdriver
   sgcop!
+  simple_form
   solid_cable
   solid_cache
   solid_queue

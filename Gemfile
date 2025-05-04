@@ -10,6 +10,7 @@ gem 'importmap-rails'
 gem 'kamal', require: false
 gem 'propshaft'
 gem 'puma'
+gem 'simple_form'
 gem 'solid_cable'
 gem 'solid_cache'
 gem 'solid_queue'
@@ -38,4 +39,4 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem "dartsass-rails", "~> 0.5.1"
+gem 'dartsass-rails', '~> 0.5.1'
