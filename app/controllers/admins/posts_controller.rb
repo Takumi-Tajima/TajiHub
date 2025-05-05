@@ -42,6 +42,6 @@ class Admins::PostsController < Admins::ApplicationController
   end
 
   def post_params
-    params.expect(post: %i[title content])
+    params.expect(post: %i[title content published])
   end
 end

@@ -4,6 +4,7 @@ class Post < ApplicationRecord
   validates :published, inclusion: { in: [true, false] }
 
   scope :default_order, -> { order(updated_at: :desc, created_at: :desc) }
+  scope :published, -> { where(published: true) }
 
   before_validation :check_title_or_content
 
