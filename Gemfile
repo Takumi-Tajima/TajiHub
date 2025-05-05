@@ -5,7 +5,8 @@ gem 'rails'
 gem 'bootsnap', require: false
 gem 'bootstrap'
 gem 'dartsass-rails'
-gem 'devise'
+# rspecで使用するsign_inヘルパーがRails8に対応していないためmainブランチを指定
+gem 'devise', git: 'https://github.com/heartcombo/devise', branch: 'main'
 gem 'haml-rails'
 gem 'importmap-rails'
 gem 'kamal', require: false

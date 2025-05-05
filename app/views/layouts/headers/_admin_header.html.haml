@@ -1,4 +1,4 @@
 .navbar.bg-light
-  .container-fluid
-    .d-flex.align-items-center
-      .navbar-brand.fs-2= link_to 'TajiHub', admins_root_path, class: 'text-decoration-none text-body'
+  .container-fluid.justify-content-between
+    .navbar-brand.fs-2= link_to 'TajiHub : 管理者', admins_root_path, class: 'text-decoration-none text-body'
+    .navbar-brand= button_to 'ログアウト', destroy_admin_session_path, method: :delete, class: 'btn btn-outline-danger'
