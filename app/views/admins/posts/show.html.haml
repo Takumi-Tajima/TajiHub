@@ -1,0 +1,11 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @post.title
+%p
+  %b Content:
+  = @post.content
+
+= link_to 'Edit', edit_admins_post_path(@post)
+= button_to 'Delete', admins_post_path(@post), method: :delete, data: { confirm: 'Are you sure?' }

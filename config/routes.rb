@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  root 'home#index'
   devise_for :admins
   # root 'home#index'
   # Define your appliscation routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   namespace :admins do
-    root 'home#index'
+    root 'posts#index'
+    resources :posts, only: %i[index show new create edit update destroy]
   end
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
