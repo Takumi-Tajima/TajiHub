@@ -1,5 +1,7 @@
-%h1 Editing post
-
 = render 'form', post: @post
 
-= link_to 'Show', admins_post_path(@post)
+= button_to '削除',
+  admins_post_path(@post),
+  method: :delete,
+  data: { turbo_confirm: '記事  を削除しますか？' },
+  class: 'btn btn-danger mt-3'
