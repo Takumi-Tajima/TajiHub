@@ -16,7 +16,7 @@ class Admins::PostsController < Admins::ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to admins_posts_path, notice: 'Post was successfully created.'
+      redirect_to admins_posts_path, notice: 'ポストを登録しました'
     else
       render :new, status: :unprocessable_entity
     end
@@ -24,7 +24,7 @@ class Admins::PostsController < Admins::ApplicationController
 
   def update
     if @post.update(post_params)
-      redirect_to admins_posts_path, notice: 'Post was successfully updated.', status: :see_other
+      redirect_to admins_posts_path, notice: 'ポストを編集しました', status: :see_other
     else
       render :edit, status: :unprocessable_entity
     end
@@ -32,7 +32,7 @@ class Admins::PostsController < Admins::ApplicationController
 
   def destroy
     @post.destroy!
-    redirect_to admins_posts_path, notice: 'Post was successfully destroyed.', status: :see_other
+    redirect_to admins_posts_path, notice: 'ポストを削除しました', status: :see_other
   end
 
   private

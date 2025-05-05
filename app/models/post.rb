@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
-  validates :published, presence: true, inclusion: { in: [true, false] }
+  validates :published, inclusion: { in: [true, false] }
 
   scope :default_order, -> { order(updated_at: :desc, created_at: :desc) }
 

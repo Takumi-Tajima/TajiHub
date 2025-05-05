@@ -1,7 +1,7 @@
 = render 'form', post: @post
 
 = button_to '削除',
-  admins_post_path(@post),
-  method: :delete,
-  data: { turbo_confirm: '記事  を削除しますか？' },
-  class: 'btn btn-danger mt-3'
+            admins_post_path(@post),
+            method: :delete,
+            data: { turbo_confirm: '記事を削除しますか？' },
+            class: 'btn btn-danger mt-3'
