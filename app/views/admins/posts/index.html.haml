@@ -8,6 +8,7 @@
       %th 内容
       %th 作成日時
       %th 更新日時
+      %th 公開ステータス
 
   %tbody
     - @posts.each do |post|
@@ -18,3 +19,4 @@
         %td= truncate(post.content)
         %td= l(post.created_at)
         %td= l(post.updated_at)
+        %td= post.published? ? '公開' : '非公開'
