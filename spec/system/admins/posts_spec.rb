@@ -15,8 +15,10 @@ RSpec.describe 'ポスト機能', type: :system do
       expect(page).to have_content '内容'
       expect(page).to have_content '作成日時'
       expect(page).to have_content '更新日時'
+      expect(page).to have_content '公開ステータス'
       expect(page).to have_link 'The World'
       expect(page).to have_content 'Dioのスタンド'
+      expect(page).to have_content '非公開'
       expect(page).to have_content '新規登録'
     end
   end
