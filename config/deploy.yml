@@ -2,7 +2,7 @@
 service: taji_hub
 
 # Name of the container image.
-image: taji/taji_hub
+image: taji2400/taji_hub
 
 # Deploy to these servers.
 servers:
