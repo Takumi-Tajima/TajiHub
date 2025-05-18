@@ -92,6 +92,7 @@ builder:
 ssh:
  user: ubuntu
 
+deploy_timeout: 60
 # Use accessory services (secrets come from .kamal/secrets).
 # accessories:
 #   db:
